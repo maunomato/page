@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Testisivu</title>
-	<link rel="stylesheet" href="/styles.css"/>
-	<link rel="icon" href="/favicon" type="image/gif"/>
+	<!-- <link rel="stylesheet" href="/styles.css"/> -->
+	<!-- <link rel="icon" href="/favicon" type="image/gif"/> -->
 	<!-- <script src='/omaskripti.js' type='text/javascript'></script> -->
 	<style>
 
@@ -19,6 +19,15 @@
 </div>
 <div class="row">
 	<p>juttuja tähän</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/RMWBriHwVrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<script>
+fetch('https://maunomato.github.io/page/songs.json')
+    .then(res => res.json())
+    .then((out) => {
+        console.log('Output: ', out);
+}).catch(err => console.error(err));
+</script>
 </body>
 </html>
